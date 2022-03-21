@@ -13,7 +13,15 @@ const getAllOfficialData = (payload) => {
                         }
                     }
                     availableOption {
-                        subCategory
+                        mainCategory{
+                            name
+                            color
+                        }
+                        subCategory,
+                        socialMedia {
+                            siteName
+                            logo
+                        }
                     }
                     companyName
                     logo

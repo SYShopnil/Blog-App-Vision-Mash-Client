@@ -1,0 +1,29 @@
+.navBarContent {
+  display: inline-block;
+  padding-right: 2%;
+  display: inline-flex;
+  padding: 3%;
+  border-right: 1px solid #eceef2;
+  text-transform: capitalize;
+  transition: 0.1s all ease;
+}
+.navBarContent:hover {
+  border-bottom: 3px solid #2b2f4b !important;
+}
+.borderLeft {
+  border-left: 1px solid #eceef2;
+}
+.logo {
+  max-height: 55%;
+  max-width: 87%;
+}
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.HandBurgerWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

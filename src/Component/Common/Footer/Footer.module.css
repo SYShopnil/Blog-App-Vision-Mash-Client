@@ -1,0 +1,10 @@
+.contentFont {
+  color: #a6b5ce !important ;
+}
+
+.contentFontAlphabet {
+  transition: all 0.5s ease;
+}
+.contentFontAlphabet:hover {
+  color: #2b2f4b !important ;
+}

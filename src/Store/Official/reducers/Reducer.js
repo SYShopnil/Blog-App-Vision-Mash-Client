@@ -13,7 +13,9 @@ const initialState = {
         logo: "",
         email: "",
         phone: "",
-        address: ""
+        address: "",
+        availableCategories : [],
+        availableSocialMedia: []
     },
     isLoading: true,
     message: ""
@@ -29,7 +31,9 @@ const officialReducer = (state = initialState, action) => {
                     selectSocialMedia
                 } ,
                 availableOption: {
-                    subCategory
+                    subCategory,
+                    mainCategory,
+                    socialMedia
                 },
                 companyName,
                 logo,
@@ -50,7 +54,9 @@ const officialReducer = (state = initialState, action) => {
                     logo,
                     email,
                     phone,
-                    address
+                    address,
+                    availableCategories: mainCategory,
+                    availableSocialMedia: socialMedia
                 },
                 isLoading: false,
                 message: "Successfully to get official data"

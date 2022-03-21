@@ -2,6 +2,10 @@ import React, {useEffect} from 'react'
 import axios from 'axios'
 import {connect} from 'react-redux'
 import Layout from "../../Layout/Common/MainLayout"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+  fa42Group
+} from '@fortawesome/free-brands-svg-icons';
 
 const Landing = ({isLoading}) => {
   

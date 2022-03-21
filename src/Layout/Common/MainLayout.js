@@ -5,6 +5,8 @@ import {connect} from "react-redux"
 import {
   getOfficialData
 } from "../../../src/Store/Official/action/Action"
+import { Html, Head, Main, NextScript } from 'next/document'
+import LayoutStyle from "./MainLayout.module.css"
 
 const MainLayout = ({children, isLoading, getAll}) => {
   getAll();
@@ -14,13 +16,28 @@ const MainLayout = ({children, isLoading, getAll}) => {
     )
   }else {
     return (
-      <>
-          <Navbar/>
-          {
-              children
-          }
-          <Footer/>
-      </>
+      <div>
+          {/* header part */}
+         <head className = {`${LayoutStyle.HeadercContainer_fluid} ${LayoutStyle.layoutHeaderBorder}`}>
+            <div className = {`${LayoutStyle.HeaderContainer}`}>
+              <Navbar/>
+            </div>
+         </head>
+
+          {/* Content part */}
+          <body>
+            {
+                children
+            }
+          </body>
+
+          {/* Footer part */}
+          <footer className = {`${LayoutStyle.HeadercContainer_fluid} ${LayoutStyle.footerWrapper} `} >
+            <div className = {`${LayoutStyle.HeaderContainer}`}>
+               <Footer/>
+            </div>
+          </footer>
+      </div>
     )
   }
   
