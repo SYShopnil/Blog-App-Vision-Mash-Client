@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavbarStyle from "./Navbar.module.css"
-import {navBarStyle} from "../../../utils/Landing/Landing"
+import {navBarStyle} from "../../../utils/Landing/DataPassingController/Landing"
 import SearchBarIcon from '../SearchBar/SearchBarIcon'
 import HandburgerIcon from '../Handburger/HandburgerIcon'
 

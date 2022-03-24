@@ -1,6 +1,6 @@
 const getAllOfficialData = (payload) => {
     const query = `
-        query getOfficialInfo {
+        query getOfficialInfo  {
             getOfficialInfo {
                 message
                 status
@@ -38,6 +38,8 @@ const getAllOfficialData = (payload) => {
         query
     }
 }
+
+
 
 module.exports = {
     getAllOfficialData

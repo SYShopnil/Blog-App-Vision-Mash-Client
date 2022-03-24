@@ -116,16 +116,9 @@ const Footer = ({
                 const {siteName: availableSiteName} = availableSocialMedia //get the  global available site name which is available fro everyone
                 if (companySiteName == availableSiteName ) { //incomplete
                   const icon = availableSocialMedia.logo
-                  // console.log({icon}) 
-                  icon = faFacebookSquare
-                  // console.log (icon)
                   return (
                     <>
-                      <a href="">
-                        <FontAwesomeIcon
-                          icon = {icon}
-                        />
-                      </a>
+                      <i className= {`${icon}`}></i>
                     </>
                   )
                 }
