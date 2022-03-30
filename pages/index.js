@@ -36,7 +36,7 @@ export default function Home({
   sectionFour,
   sectionFive
 }) {
-  console.log({sectionOne,sectionTwo,sectionThree,sectionFour,sectionFive})
+  // console.log({sectionOne,sectionTwo,sectionThree,sectionFour,sectionFive}) //for testing 
   return (
     <>
       <h1>

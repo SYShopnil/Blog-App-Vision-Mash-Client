@@ -1,0 +1,23 @@
+.image {
+  min-width: 100% !important;
+  min-height: 15rem !important;
+}
+.CategoryFont {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.CategoryAndDateFontPart {
+  padding: 1.1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  color: #ffffff;
+}
+.TitlePartWrapper {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #60636c;
+  text-transform: capitalize;
+}
+.DateFont {
+  color: #60636c !important;
+}

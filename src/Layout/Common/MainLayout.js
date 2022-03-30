@@ -53,10 +53,12 @@ const MainLayout = ({children, isLoading, getAll}) => {
          </head>
 
           {/* Content part */}
-          <body>
-            {
-                children
-            }
+          <body className = {`${LayoutStyle.bodyContainer_Fluid}`}>
+            <div className = {`${LayoutStyle.bodyContainer}`}>
+              {
+                  children
+              }
+            </div>
           </body>
 
           {/* Footer part */}

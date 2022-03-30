@@ -48,7 +48,7 @@ const Navbar = ({
           {
               visibleCategory.map ((category, ind) => {
                 return (
-                  <>
+                  <React.Fragment key = {ind}>
                     {
                        availableCategories.map ((allCategory, ind) => {
                           if (allCategory.name ==  category) { //it will show all matched category name
@@ -57,7 +57,7 @@ const Navbar = ({
                             }).join ("").toLowerCase(); //remove all back spaces from string
                             // console.log(name)
                             return (
-                              <Link key = {ind} href = {`/${name}`}  >
+                              <Link  href = {`/${name}`}  >
                                 <a 
                                   className = {`${NavbarStyle.navBarContent}`}
                                   style = {{borderBottom :`${navBarStyle.border_width} ${navBarStyle.border_type} ${allCategory.color}`}} 
@@ -70,7 +70,7 @@ const Navbar = ({
                       })
                     }
                     
-                  </>
+                  </React.Fragment>
                 )
               })
           }

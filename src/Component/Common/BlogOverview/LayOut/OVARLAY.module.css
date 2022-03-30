@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+}
+
+.image {
+  min-width: 100% !important;
+  min-height: 15rem !important;
+}
+
+.containerRelative {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.CategoryFont {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.CategoryAndDateFontPart {
+  padding: 1.1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  color: #ffffff;
+}
+.TitlePartWrapper {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.ContentWrapper {
+  margin-left: 5%;
+}

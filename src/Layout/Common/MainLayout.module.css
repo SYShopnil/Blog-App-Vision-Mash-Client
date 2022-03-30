@@ -13,3 +13,12 @@
 .footerWrapper {
   border-top: 1px solid #eceef2;
 }
+.bodyContainer {
+  min-width: 85% !important;
+}
+.bodyContainer_Fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1.5%; */
+}

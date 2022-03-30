@@ -6,8 +6,8 @@ const blogQueryOne = `
             titlePic
             mainCategory
         }
-    publishedTime
-}
+        publishedTime
+    }
 `
 
 //FOR (Landing page Section 1) 
