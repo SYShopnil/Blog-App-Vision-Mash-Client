@@ -11,13 +11,15 @@ import SectionTwo from '../../Component/Page/Landing/SectionTwo/SectionTwo'
 import SectionThree from '../../Component/Page/Landing/SectionThree/SectionThree'
 import SectionFive from '../../Component/Page/Landing/SectionFive/SectionFive'
 import SectionFour from '../../Component/Page/Landing/SectionFour/SectionFour'
+import FetcherPost from '../../Component/Common/FetcherPost/FetcherPost'
 
 const Landing = ({
   isLoading,
   sectionOne,
-  sectionTwo
+  sectionTwo,
+  sectionThree,
+  sectionFour
 }) => {
-  
   return (
     <>
         <Layout>
@@ -28,10 +30,10 @@ const Landing = ({
              <SectionTwo data = {sectionTwo}/>
           </div>
           <div className = {`mt-12`}  >
-             <SectionThree/>
+             <SectionThree data = {sectionThree} />
           </div>
           <div className = {`mt-12`}  >
-             <SectionFour/>
+             <SectionFour data = {sectionFour} />
           </div>
           <div className = {`mt-12`}  >
               <SectionFive/>

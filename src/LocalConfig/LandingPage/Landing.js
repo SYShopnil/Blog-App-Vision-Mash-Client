@@ -1,22 +1,38 @@
-import availableDisplayType from "../Global/BlogOverview/BlogOverview"
+import availableDisplayTypeForBlogDisplay from "../Global/BlogOverview/BlogOverview"
+import availableDisplayTypeForFetcherBlogDisplay from "../Global/FetcherPostDisplayOption/FetcherOption"
 const blogDisplayType = {
-    sectionOne: availableDisplayType.OVERLAP,
-    sectionTwo: availableDisplayType.TOP_BOTTOM,
+    sectionOne: availableDisplayTypeForBlogDisplay.OVERLAP,
+    sectionTwo: availableDisplayTypeForBlogDisplay.TOP_BOTTOM,
     sectionThree: {
-        firstOne: availableDisplayType.OVERLAP,
-        restOne: availableDisplayType.TOP_BOTTOM
+        leftSide: {
+            firstOne: availableDisplayTypeForBlogDisplay.OVERLAP,
+            restOne: availableDisplayTypeForBlogDisplay.TOP_BOTTOM
+        }
     },
-    sectionFour: availableDisplayType.TOP_BOTTOM,
+    sectionFour: availableDisplayTypeForBlogDisplay.TOP_BOTTOM,
     sectionFive: {
-        mostRead: availableDisplayType.RIGHT_LEFT
+        mostRead: availableDisplayTypeForBlogDisplay.RIGHT_LEFT
     }, 
 }
 
 const sectionsTileName = {
-    sectionTwo : "Recent Posts"
+    sectionTwo : "Recent Posts",
+    sectionThree: {
+        leftSide: "",
+        rightSide: {
+            upper: "Most Read",
+            lower: "Featured Posts"
+        }
+    },
+    sectionFour : "Featured Posts"
+}
+const fetcherPostDisplay = {
+    sectionThree : availableDisplayTypeForFetcherBlogDisplay.VERTICAL,
+    sectionFour: availableDisplayTypeForFetcherBlogDisplay.HORIZONTAL
 }
 
 export {
     blogDisplayType,
-    sectionsTileName
+    sectionsTileName,
+    fetcherPostDisplay
 }

@@ -12,7 +12,6 @@ const OVERLAY = ({
     blog,
     rootCategories
 }) => {
-    // console.log({blog})
     // console.log({rootCategories})
     const {
         contentDetails: {
@@ -31,7 +30,7 @@ const OVERLAY = ({
     rootCategories.forEach (category => {
         if (category.name == mainCategory) categoryColor =  category.color
     })
-    console.log(categoryColor)
+    // console.log(categoryColor)
     return (
         //content wrapper
         <div className = {`${parentStyle.container}`}>

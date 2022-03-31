@@ -93,7 +93,7 @@ export async function getStaticProps(context) {
     getBlogDataForSectionTwoAndThreeAndFour(sectionThreeController.leftSide.lowerPart.dataLimit, sectionThreeController.leftSide.lowerPart.queryBy) )  //fetching for section 3
   const {data:sectionThreeLeftLowerPartData} = getFetcherPostForSectionThreeLeftLowerPart  //store fetch data 
   const structureOfThreeLeftLowerPartResponse = leftSideLowerPartStructure (sectionThreeLeftLowerPartData) //get a structure of response what we need to pass in to component
-
+  console.log({sectionThreeLeftLowerPartData})
   //Section 4 part 
   const getMostReadPostForSectionFourPart = await axios.post ( //fetching data
     BlogAPI, 
@@ -123,8 +123,8 @@ export async function getStaticProps(context) {
       sectionOne: structureOfSectionOne,
       sectionTwo: structureOfSectionTwo,
       sectionThree: {
-        rightSide: structureOfThreeRightSubSectionOneResponse,
-        leftSide: {
+        leftSide: structureOfThreeRightSubSectionOneResponse,
+        rightSide: {
           upper: structureOfThreeLeftSubSectionUpperResponse,
           lower: structureOfThreeLeftLowerPartResponse
         }

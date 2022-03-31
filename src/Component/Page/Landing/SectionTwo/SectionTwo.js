@@ -4,7 +4,7 @@ import {
   blogDisplayType,
   sectionsTileName
 } from "../../../../LocalConfig/LandingPage/Landing.js"
-import CommonLayoutStyle from "../CommonStyle.module.css"
+import SectionTitle from '../../../Common/SectionTitle/SectionTitle'
 
 const SectionTwo = (
   {
@@ -18,8 +18,8 @@ const SectionTwo = (
   return (
     <div>
       {/* title part */}
-      <div className = {`mb-6 h-10 font-bold text-3xl ${CommonLayoutStyle.titleFont}`}>
-          <h1>{sectionsTileName.sectionTwo}</h1>
+      <div className = {`mb-6 h-10`}>
+          <SectionTitle title = {sectionsTileName.sectionTwo}/>
       </div>
 
       {/* content part */}
